@@ -18,6 +18,7 @@
       var bu;
       var kitsune;
       var da;
+      var audio = new Audio('assets/yo.mp3')
 
       $("#ka").click(function(){
         $("#ka").css('color','blue');
@@ -42,7 +43,7 @@
     
     function playiftrue(){
       if(ka == true && bu == true && kitsune == true && da == true){
-        new Audio('assets/yo.mp3').play();
+        audio.play();
       }
     }
 

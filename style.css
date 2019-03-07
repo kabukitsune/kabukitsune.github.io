@@ -1,0 +1,5 @@
+@font-face {
+    font-family: aoyagi;
+    src: url("./assets/aoyagireisyosimo_ttf_2_01.ttf") format("truetype"),
+    url("./assets/KouzanGyoushoOTF.otf") format("opentype");
+}

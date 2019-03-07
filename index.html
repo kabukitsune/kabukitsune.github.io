@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./style.css">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>KabuKitsune</title>
+  <style type="text/css">
+  .zoom:hover {
+    transform: scale(0.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  </style>
+  <script>
+    $(document).ready(function(){
+      var ka;
+      var bu;
+      var kitsune;
+      var da;
+
+      $("#ka").click(function(){
+        $("#ka").css('color','blue');
+        ka = true;
+        playiftrue();
+      });
+      $("#bu").click(function(){
+        $("#bu").css('color','blue');
+        bu = true;
+        playiftrue();
+      });
+      $("#kitsune").click(function(){
+        $("#kitsune").css('color','blue');
+        kitsune = true;
+        playiftrue();
+      });
+      $("#da").click(function(){
+        $("#da").css('color','blue');
+        da = true;
+        playiftrue();
+      });
+    
+    function playiftrue(){
+      if(ka == true && bu == true && kitsune == true && da == true){
+        new Audio('assets/yo.mp3').play();
+      }
+    }
+
+    });  
+  </script>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-3 col-lg-4 col-xs-0" style="z-index: 1;">
+      <center><div id="ka" style="font-family: aoyagi;font-size: 15vw;color: #B10E04;">歌</div><div id="bu" style="font-family: aoyagi;font-size: 15vw;color: #B10E04;">舞</div></center>
+    </div>
+    <div class="col-md-6 col-sm-6 col-lg-4 col-xs-0">
+      <img class="" src="assets/kitsunetransparent.png" style="margin-left: -10%;">
+    </div>
+    <div class="col-md-3 col-sm-3 col-lg-4 col-xs-0" style="z-index: 1;">
+      <center><div id="kitsune" style="font-family: aoyagi;font-size: 15vw;color: #B10E04;">狐</div><div id="da" style="font-family: aoyagi;font-size: 15vw;color: #B10E04;">だ。</div></center>
+    </div>
+  </div>
+</div>
+</body>
+</html>
